@@ -7,6 +7,7 @@ const routes = [{
     path: '/',
     element: (<><SimpleHeader>
         <Home2/></SimpleHeader></>)
+    
 }]
 
 export default routes

@@ -1,3 +1,3 @@
 import studentRoutes from '@/routes/roles/student';
-
-export const routes = [...studentRoutes];
+import publicRoutes from '@/routes/roles/public';
+export const routes = [...studentRoutes, ...publicRoutes];
