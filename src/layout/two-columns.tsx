@@ -8,9 +8,9 @@ export default function TwoColumns({ component1, component2, background = 'img/c
         width: '100%'
       };
     return (<>
-        <div className='columns-2 gap-8' style={divStyle}>
-            <div className=''>{component1}</div>
-            <div className=''>{component2}</div>
+        <div className='grid grid-cols-2 gap-12 p-20' style={divStyle}>
+            <div>{component1}</div>
+            <div>{component2}</div>
         </div>
     </>)
 }

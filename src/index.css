@@ -73,4 +73,11 @@
   body {
     @apply bg-background text-foreground;
   }
+  h1 {
+    @apply text-3xl font-bold text-primary; 
+  }
+
+  p {
+    @apply text-base text-muted-foreground;
+  }
 }

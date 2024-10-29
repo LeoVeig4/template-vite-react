@@ -1,12 +1,18 @@
 import { ReactNode } from 'react'
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 
-export default function CustomCard({ title, children, footer }: { title: string, children: ReactNode, footer: ReactNode }) {
+export default function CustomCard({ title, children, footer, className }: { title?: string, children: ReactNode, footer?: ReactNode, className?: string }) {
     return (
-        <Card>
-            {title && <CardHeader>{title}</CardHeader>}
+        <Card className={className}>
+            {title && <>
+                <CardHeader className='font-bold'>{title}</CardHeader>
+                <hr className='mx-2'/>
+            </>}
             <CardBody>{children}</CardBody>
-            {footer && <CardFooter>{footer}</CardFooter>}
+            {footer && <>
+            <hr className='mx-2'/>
+                <CardFooter>{footer}</CardFooter>
+            </>}
         </Card>
     )
 }
